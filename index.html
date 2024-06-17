@@ -1,17 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn Javascript</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>DOM Example</title>
 </head>
 
 <body>
-    <h1>hello Javascript</h1>
+    <h1 id="header">Hello, World!</h1>
+    <p class="intro">This is an example of the DOM.</p>
+    <button onclick="changeContent()">Click me</button>
 
-    <script src="./js.js"></script>
+    <script>
+        function changeContent() {
+            debugger
+            // Get the header element by its ID
+            var header = document.getElementById('header');
+
+            // Change the text content of the header
+            header.textContent = 'Hello, DOM!';
+
+            // Get the paragraph element by its class name
+            var paragraph = document.getElementsByClassName('intro')[0];
+
+            // Change the text content of the paragraph
+            paragraph.textContent = 'The DOM allows us to manipulate web documents dynamically.';
+        }
+    </script>
+
+    <script src="./some-important-basic-js.js"></script>
 </body>
 
 </html>
