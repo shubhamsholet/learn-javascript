@@ -42,39 +42,25 @@ paramid(5);
 
 
 
-//  array in accending and deaccending order
+let arr1 = [9, 5, 7, 6, 1, 3, 0];
+let arr2 = ["9", "5", "7", "6", "1", "3", "0"];
+let arr3 = [9, "5", 7, "6", 1, "3", 0];
+// console.table(arr3);
 
-var array = [4, 3, 5, 7, 88, 55, 22, 44, 2, 1]
+for (let i = 0; i < arr3.length; i++) {
+  //   arr3[i] = parseInt(arr3[i]); //for descending
+  //   console.log(arr3);
+  for (let j = 0; j < arr3.length - 1 - i; j++) {
+    arr3[i] = parseInt(arr3[i]); //for ascending
 
-// var array = ['4', '3', '5', '7', '88', '55', '22', '44', '2', '1']
-
-// if it is an array format of string
-
-// convert it into number
-
-
-
-
-
-for (let i = 0; i <= array.length; i++) {
-
-
-    for (let j = 0; j < array.length - 1 - i; j++) {
-
-        //         if (array[j] > array[j + 1]) for accending 
-
-        // for deaccending
-
-        if (array[j] < array[j + 1]) {
-
-            var temp = array[j]
-
-            array[j] = array[j + 1]
-
-            array[j + 1] = temp
-
-        }
-
+    if (arr3[j] > arr3[j + 1]) {
+      var temp = arr3[j];
+      arr3[j] = arr3[j + 1];
+      arr3[j + 1] = temp;
     }
+  }
 }
-console.log(array)
+
+// console.log(arr1);
+// console.log(arr2);
+console.table(arr3);
