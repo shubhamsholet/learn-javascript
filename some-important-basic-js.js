@@ -13,6 +13,14 @@ function paramid(levelORheight) {
         }
 
 
+           // for right paramid  just double the space
+
+     //   for (let h = 0 ; h <= (levelORheight -i)*2; h++) {
+     //       element += ' '
+     //   }
+
+        
+
         for (let j = 0; j < (2 * i - 1); j++) {
             element += '*'
         }
