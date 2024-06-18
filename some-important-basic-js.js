@@ -2,7 +2,11 @@
 
 function paramid(levelORheight) {
 
-    for (let i = 0; i <= levelORheight; i++) {
+    for (let i = 0; i <= levelORheight; i++) 
+
+        for reverse just reverse the loop
+    //    for (let i = levelORheight; i >= 1; i--)
+    {
 
         var element = '';
 
